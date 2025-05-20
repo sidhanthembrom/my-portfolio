@@ -3,15 +3,15 @@ import { motion } from "motion/react";
 
 export default function App() {
   return (
-    <div className="bg-black h-screen p-5 flex justify-center items-center gap-20">
+    <div className="bg-black h-screen p-20 flex justify-center items-center gap-20">
       <div className="flex flex-col">
         <motion.h1
           initial={{ opacity: 0 }}
           transition={{ duration: 2, delay: 0.3 }}
           animate={{ opacity: 1 }}
-          className="font-bold bg-clip-text text-transparent text-center bg-linear-to-r from-cyan-500 to-blue-500 text-[3rem]"
+          className="font-bold bg-clip-text text-transparent text-center bg-linear-to-r from-cyan-500 to-blue-500 text-[3rem] h-40 w-[35rem]"
         >
-          Hey there! I'm a Frontend Developer
+          Hi, I'm Sidhant Hembrom, a Frontend Developer
           <span className="text-white">.</span>
         </motion.h1>
         <motion.p
