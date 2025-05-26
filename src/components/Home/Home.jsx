@@ -1,4 +1,3 @@
-// import Header from "../Header/Header";
 import { motion } from "motion/react";
 
 export default function Home() {

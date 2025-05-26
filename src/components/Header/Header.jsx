@@ -1,7 +1,4 @@
-import { Link } from "react-router-dom";
 import { motion } from "motion/react";
-
-const MotionLink = motion.create(Link);
 
 export default function Header() {
   return (
