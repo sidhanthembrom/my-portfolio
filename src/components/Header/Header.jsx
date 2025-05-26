@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import { motion } from "motion/react";
+
+const MotionLink = motion.create(Link);
 
 export default function Header() {
   return (
@@ -7,18 +10,46 @@ export default function Header() {
         Portfolio
       </h1>
       <nav>
-        <ul className="flex gap-5 bg-linear-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent">
+        <ul className="flex gap-5">
           <li className="cursor-pointer">
-            <Link to="#home">Home</Link>
+            <motion.a
+              href="#home"
+              className="block bg-linear-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent"
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              Home
+            </motion.a>
           </li>
           <li className="cursor-pointer">
-            <Link to="#about">About</Link>
+            <motion.a
+              href="#about"
+              className="block bg-linear-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent"
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              About
+            </motion.a>
           </li>
           <li className="cursor-pointer">
-            <Link to="#projects">Projects</Link>
+            <motion.a
+              href="#projects"
+              className="block bg-linear-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent"
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              Projects
+            </motion.a>
           </li>
           <li className="cursor-pointer">
-            <Link to="#contacts">Contacts</Link>
+            <motion.a
+              href="#contacts"
+              className="block bg-linear-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent"
+              whileHover={{ scale: 1.1 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              Contacts
+            </motion.a>
           </li>
         </ul>
       </nav>
