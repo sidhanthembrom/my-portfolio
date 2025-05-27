@@ -1,5 +1,3 @@
-import { motion } from "motion/react";
-
 export default function Header() {
   return (
     <header className="h-[100px] flex justify-between px-20 items-center bg-black ">
@@ -9,44 +7,36 @@ export default function Header() {
       <nav>
         <ul className="flex gap-5">
           <li className="cursor-pointer">
-            <motion.a
+            <a
               href="#home"
-              className="block bg-linear-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent"
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 300 }}
+              className="block relative after:absolute after:left-0 after:bottom-0 after:bg-white after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-500 bg-linear-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent"
             >
               Home
-            </motion.a>
+            </a>
           </li>
           <li className="cursor-pointer">
-            <motion.a
+            <a
               href="#about"
-              className="block bg-linear-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent"
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 300 }}
+              className="block relative after:absolute after:left-0 after:bottom-0 after:bg-white after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-500 bg-linear-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent"
             >
               About
-            </motion.a>
+            </a>
           </li>
           <li className="cursor-pointer">
-            <motion.a
+            <a
               href="#projects"
-              className="block bg-linear-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent"
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 300 }}
+              className="block relative after:absolute after:left-0 after:bottom-0 after:bg-white after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-500 bg-linear-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent"
             >
               Projects
-            </motion.a>
+            </a>
           </li>
           <li className="cursor-pointer">
-            <motion.a
+            <a
               href="#contacts"
-              className="block bg-linear-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent"
-              whileHover={{ scale: 1.1 }}
-              transition={{ type: "spring", stiffness: 300 }}
+              className="block relative after:absolute after:left-0 after:bottom-0 after:bg-white after:h-[2px] after:w-0 hover:after:w-full after:transition-all after:duration-500 bg-linear-to-r from-cyan-500 to-blue-500 bg-clip-text text-transparent"
             >
               Contacts
-            </motion.a>
+            </a>
           </li>
         </ul>
       </nav>

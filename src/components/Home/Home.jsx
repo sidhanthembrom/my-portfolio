@@ -27,7 +27,7 @@ export default function Home() {
           turning design concepts into engaging, interactive web experiences.
         </motion.p>
       </div>
-      <div className="flex bg-radial from-cyan-500 to-blue-500 h-[400px]">
+      <div className="flex h-[670px]">
         <img src="/for_website.png" alt="profile-img" />
       </div>
     </div>
