@@ -13,6 +13,8 @@ export default function Header() {
             >
               Home
             </motion.a>
+            
+            {/* used for overlay */}
             <motion.div
               className="bg-black inset-0 absolute"
               initial={{ x: 0 }}
