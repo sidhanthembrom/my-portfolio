@@ -2,10 +2,10 @@ import { motion } from "motion/react";
 
 const LoadingScreen = () => {
   return (
-    <motion.div className="fixed inset-0 text-white z-50">
+    <motion.div className="bg-black fixed inset-0 text-black z-50">
       {/* top panel */}
       <motion.div
-        className="bg-black w-full h-1/2 flex justify-center items-end"
+        className="bg-white w-full h-1/2 flex justify-center items-end"
         initial={{ y: 0 }}
         animate={{ y: "-100%" }}
         transition={{ duration: 3, ease: "easeInOut", delay: 1 }}
@@ -23,7 +23,7 @@ const LoadingScreen = () => {
 
       {/* bottom panel */}
       <motion.div
-        className="bg-black w-full h-1/2 flex justify-center items-start"
+        className="bg-white w-full h-1/2 flex justify-center items-start"
         initial={{ y: 0 }}
         animate={{ y: "+100%" }}
         transition={{ duration: 3, ease: "easeInOut", delay: 1 }}
